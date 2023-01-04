@@ -1,0 +1,11 @@
+B1: Mở file db, tạo một csdl với tên là webtintuc_db (CSDL: mysql)
+B2: Tạo thư mục vendor : lệnh terminal: composer install
+B3: Sau đó nó sẽ tạo ra một file tên là .env.example -> copy file này xóa đuôi .example đi
+B4: bật file .env lên điền lần lượt với cấu hình mysql đã cài:
+DB_DATABASE=webtintuc_db
+DB_USERNAME=root
+DB_PASSWORD=123456 (Có thể có người không có mật khẩu)
+B5: Tạo key
+php artisan key:generate
+B6: sau khi đã xong
+php artisan serve
